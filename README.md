@@ -16,7 +16,10 @@ Fazer login para acessar funcionalidades personalizadas (em desenvolvimento)
 
 Entrar em contato por meio de formulário (seção Contato)
 
-Justificativa do Projeto
+
+justificativa do projeto (pessoal) 
+-nós gostamos muito de assistir séries e filmes, aproveitamos que tínhamos esse "interesse" em comum e quisemos criar um site baseado em alguns aplicativos que usamos para olhar, criando nosso prório site. (Referência da netflix)
+Justificativa do Projeto2
 O consumo de conteúdo audiovisual cresce exponencialmente e a busca por plataformas que centralizam informações sobre filmes e séries é cada vez maior.
 Este clone do TMDb servirá como prática para consolidar conhecimentos em:
 
