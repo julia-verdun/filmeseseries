@@ -1,8 +1,9 @@
-TMDb CLONE
 
-TMDb Clone
 
-Escopo do Projeto
+TMBD CLONE
+
+ESCOPO DO PROJETO 
+
 Este projeto consiste no desenvolvimento de uma aplicação web que replica funcionalidades básicas do TMDb (The Movie Database), uma popular plataforma para busca e consulta de filmes e séries.
 O sistema permitirá que usuários possam:
 
@@ -17,9 +18,10 @@ Fazer login para acessar funcionalidades personalizadas (em desenvolvimento)
 Entrar em contato por meio de formulário (seção Contato)
 
 
-justificativa do projeto (pessoal) 
+JUSTIFICATIVA DO PROJETO (PESSOAL)
 -nós gostamos muito de assistir séries e filmes, aproveitamos que tínhamos esse "interesse" em comum e quisemos criar um site baseado em alguns aplicativos que usamos para olhar, criando nosso prório site. (Referência da netflix)
-Justificativa do Projeto2
+
+JUSTIFICATIVA DO PROJETO2 
 O consumo de conteúdo audiovisual cresce exponencialmente e a busca por plataformas que centralizam informações sobre filmes e séries é cada vez maior.
 Este clone do TMDb servirá como prática para consolidar conhecimentos em:
 
@@ -33,7 +35,7 @@ Design responsivo e experiência do usuário
 
 Além disso, o projeto permite aplicar técnicas modernas de desenvolvimento web em um contexto real, simulando funcionalidades de uma plataforma muito utilizada.
 
-Tecnologias Envolvidas
+TÉCNOLOGIAS ENVOLVIDAS
 
 Front-end: HTML5, CSS3, JavaScript (puro)
 
@@ -43,7 +45,7 @@ Controle de versão: Git + GitHub
 
 Layout responsivo e acessibilidade
 
-Protótipo (Wireframe)
+PROTÓTIPO INICIAL (WIFRAME)
 Protótipo inicial criado para planejar as telas principais do sistema:
 
 Página inicial com listagem de filmes e séries
@@ -57,9 +59,9 @@ Modal de login
 Seção de contato com formulário
 
 📎 Link do Protótipo no Figma
-(ou adicionar imagem abaixo quando disponível)
+https://www.canva.com/design/DAGwuR5IBuY/2C_SVjMuomLY9hPIG3Rr9w/edit?utm_content=DAGwuR5IBuY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-Etapa Atual
+ETAPA ATUAL
 Etapa 1 – Desenvolvimento Inicial
 
 Estrutura HTML e CSS criada
