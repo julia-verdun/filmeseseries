@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TMDb Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Estilo básico para a seção de contato */
+    #contact {
+      padding: 50px;
+      background-color: #070202;
+    }
+
+    #contact h2 {
+      margin-bottom: 20px;
+    }
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+
+    #contact input, #contact textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    #a {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Navegação com botões distribuídos */
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    nav button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: none;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: inherit;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    nav button:hover {
+      background: #ff7f00;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Estilo para o link Contato para parecer botão */
+    nav a#contactBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: none;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: inherit; /* herda cor branca do nav */
+      text-decoration: none; /* remove sublinhado */
+      display: inline-block;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    nav a#contactBtn:hover {
+      background: #ff7f00;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Rodapé com direitos autorais */
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      font-size: 18px;
+      color: white;
+      background-color: #070402;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TMDb Clone</h1>
+
+    <!-- Menu de navegação -->
+    <nav>
+      <button id="homeBtn">Início</button>
+      <button id="moviesBtn">Filmes</button>
+      <button id="seriesBtn">Séries</button>
+      <a id="contactBtn" href="contato.html">Contato</a>
+    </nav>
+
+    <!-- Barra de pesquisa -->
+    <input type="text" id="searchInput" placeholder="Buscar filmes ou séries..." />
+    <button id="searchBtn">Buscar</button>
+
+    <!-- Botão de Login -->
+    <button id="loginBtn">Login</button>
+  </header>
+
+  <!-- Modal de Login -->
+  <div id="loginModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Entrar</h2>
+      <input type="text" id="usernameInput" placeholder="Nome de usuário" />
+      <input type="password" id="passwordInput" placeholder="Senha" />
+      <button id="submitLogin">Entrar</button>
+      <button id="closeLogin">Fechar</button>
+    </div>
+  </div>
+
+  <main>
+    <section id="moviesList"></section>
+    <section id="movieDetails" class="hidden"></section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Jordan e Julia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="ap.js" defer></script>
+</body>
+</html>

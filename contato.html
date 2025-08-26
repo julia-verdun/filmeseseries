@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact-card {
+      background-color: #1a1a1a;
+      padding: 40px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+      border: 2px solid red;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: red;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: #333;
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #aaa;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: red;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #cc0000;
+    }
+
+    .success-message {
+      text-align: center;
+      margin-top: 20px;
+      color: limegreen;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-card">
+    <h2>Fale Conosco</h2>
+    <form id="contactForm">
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <textarea name="message" placeholder="Digite sua mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p class="success-message" id="successMessage">Sua mensagem foi enviada com sucesso!</p>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      // Aqui você pode integrar com back-end ou apenas exibir a mensagem
+      document.getElementById("successMessage").style.display = "block";
+
+      // Limpa os campos
+      this.reset();
+    });
+  </script>
+</body>
+</html>

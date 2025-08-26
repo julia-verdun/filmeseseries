@@ -1,0 +1,243 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d0d0d;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+header {
+  background: linear-gradient(135deg, #960303, #970808);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* ===== MENU ===== */
+nav {
+  display: flex;
+  justify-content: space-evenly; /* Espaçamento balanceado entre os botões */
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav button {
+  padding: 20px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #ee7606;
+  border-radius: 5px;
+}
+
+nav button:hover {
+  background: #ff7f00;
+  color: #fa7d08;
+  transform: scale(1.05);
+}
+/* ================= */
+
+header input {
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+header button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #ff0057;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+header button:hover {
+  background: #ff7f00;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ===== LAYOUT PRINCIPAL ===== */
+main {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+/* ===== LISTA DE FILMES ===== */
+#moviesList {
+  flex: 1 1 60%;
+  display: flex;
+  flex-wrap: wrap;       /* permite quebra de linha */
+  gap: 20px;             /* espaço entre cards */
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px 0;
+  justify-content: flex-start; /* alinha no início */
+}
+
+.movie-card {
+  flex: 0 0 200px;       /* largura fixa 200px */
+  cursor: pointer;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 3px solid #ff0057;
+}
+
+.movie-info {
+  padding: 12px;
+  text-align: center;
+}
+
+.movie-title {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.movie-rating {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* ===== DETALHES DO FILME ===== */
+#movieDetails {
+  flex: 1 1 40%;
+  padding: 30px;
+  background: #1a1a1a;
+  border-radius: 15px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+#movieDetails h2 {
+  margin-top: 0;
+  color: #ff0057;
+}
+
+#movieDetails button {
+  background: #ff0057;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#movieDetails button:hover {
+  background: #ff7f00;
+  transform: scale(1.05);
+}
+
+#movieDetails img {
+  margin-top: 10px;
+  width: 200px;
+  border-radius: 6px;
+}
+
+/* ===== CLASSES DE UTILIDADE ===== */
+.hidden {
+  display: none;
+}
+
+/* ===== Modal Login ===== */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  color: #fff;
+  width: 300px;
+}
+
+.modal-content input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  border: none;
+  border-radius: 6px;
+}
+
+.modal-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#submitLogin {
+  background: #ff0057;
+  color: #fff;
+}
+
+#closeLogin {
+  background: #444;
+  color: #fff;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 18px;      /* Aumenta o tamanho da fonte */
+  color: white;         /* Cor branca */
+  background-color: #070202; /* Mesmo fundo escuro da seção de contato */
+  margin-top: 40px;
+}
+
+/* ===== Scrollbars opcionais para lista e detalhes ===== */
+#moviesList::-webkit-scrollbar,
+#movieDetails::-webkit-scrollbar {
+  width: 8px;
+}
+
+#moviesList::-webkit-scrollbar-thumb,
+#movieDetails::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
