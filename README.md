@@ -19,57 +19,6 @@ PONTOS CRÍTICOS
 
 8. Lógica de Filtro para Títulos e Imagens: A sua função filterValidMovies é boa, mas a lógica de checar movie.title ou movie.name e poster_path ou backdrop_path poderia ser otimizada. É uma boa prática, mas se a API sempre retornar um título em um campo específico, o filtro pode ser mais direto. O ideal é entender o padrão da API para ter um código mais conciso.
 
-9. Hierarquia de Títulos (h1, h2): A tag h1 deve ser usada uma única vez por página para representar o título principal. No seu código, "TMDb Clone" está como h1. O "Fale Conosco" está como h2, o que é correto. No entanto, se você tivesse mais de um h1, isso seria um problema de semântica e acessibilidade. É uma boa prática ter apenas um título principal por página.
+9. Hierarquia de Títulos (h1, h2): A tag <h1> deve ser usada uma única vez por página para representar o título principal. No seu código, "TMDb Clone" está como <h1>. O "Fale Conosco" está como <h2>, o que é correto. No entanto, se você tivesse mais de um <h1>, isso seria um problema de semântica e acessibilidade. É uma boa prática ter apenas um título principal por página.
 
 10. Falta de Feedback Visual para o Formulário: Embora você tenha uma mensagem de sucesso que aparece, o formulário simplesmente desaparece e uma mensagem aparece. Uma experiência de usuário melhor seria mostrar um estado de carregamento enquanto a mensagem "é enviada" e, em seguida, exibir a mensagem de sucesso ou erro. Isso dá ao usuário a sensação de que a ação foi realmente processada.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
