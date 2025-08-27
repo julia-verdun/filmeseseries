@@ -3,7 +3,7 @@ README MD
 
 PONTOS CRÍTICOS
 
-1.Acessibilidade do Formulário de Contato: A seção de contato está usando inputs e textareas sem os labels correspondentes. Isso é um problema sério de acessibilidade. Usuários que usam leitores de tela não conseguem saber a função de cada campo, pois não há uma descrição associada. O ideal é usar a tag <label> ligada ao input com os atributos for e id.
+ 1.Acessibilidade do Formulário de Contato: A seção de contato está usando inputs e textareas sem os labels correspondentes. Isso é um problema sério de acessibilidade. Usuários que usam leitores de tela não conseguem saber a função de cada campo, pois não há uma         descrição associada. O ideal é usar a tag <label> ligada ao input com os atributos for e id.
 
 2. Mistura de Estilos CSS: Você tem um bloco de <style> no <head> da página, que está definindo os estilos para a seção de contato. O ideal é que todos os estilos fiquem em um único arquivo .css (no seu caso, style.css). Isso facilita a manutenção, evita a duplicação de código e mantém a organização do projeto.
 
