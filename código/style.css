@@ -1,0 +1,390 @@
+/* ===== Reset básico e fonte ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d0d0d;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(135deg, #960303, #970808);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* ===== MENU ===== */
+nav {
+  display: flex;
+  justify-content: center; /* centraliza os botões */
+  gap: 1.5rem; /* espaço consistente entre os botões */
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+nav button {
+  padding: 12px 24px;
+  font-size: 1.125rem; /* 18px */
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #ee7606;
+  border-radius: 6px;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  min-width: 100px;
+}
+
+nav button:hover,
+nav button:focus {
+  background: #ff7f00;
+  color: #fa7d08;
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* ===== BARRA DE PESQUISA ===== */
+header input[type="text"] {
+  padding: 10px 15px;
+  margin: 10px 10px 10px 0;
+  width: 250px;
+  max-width: 100%;
+  border: none;
+  border-radius: 8px;
+  outline-offset: 2px;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+header input[type="text"]:focus {
+  box-shadow: 0 0 6px 2px #ff7f00;
+}
+
+header button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #ff0057;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+header button:hover,
+header button:focus {
+  background: #ff7f00;
+  color: #fff;
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* ===== LAYOUT PRINCIPAL ===== */
+main {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  flex-wrap: wrap; /* para melhor responsividade */
+}
+
+/* ===== LISTA DE FILMES ===== */
+#moviesList {
+  flex: 1 1 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px 0;
+  justify-content: flex-start;
+  min-width: 280px; /* evita colapso em telas pequenas */
+}
+
+/* CARD DO FILME */
+.movie-card {
+  flex: 0 0 200px;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card:hover,
+.movie-card:focus-within {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+  outline: none;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 3px solid #ff0057;
+  flex-shrink: 0;
+}
+
+.movie-info {
+  padding: 12px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-title {
+  margin: 5px 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.movie-rating {
+  color: #ffcc00;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* ===== DETALHES DO FILME ===== */
+#movieDetails {
+  flex: 1 1 35%;
+  padding: 30px;
+  background: #1a1a1a;
+  border-radius: 15px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  min-width: 280px;
+}
+
+#movieDetails h2 {
+  margin-top: 0;
+  color: #ff0057;
+  font-size: 2rem;
+}
+
+#movieDetails p {
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+#movieDetails button {
+  background: #ff0057;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+#movieDetails button:hover,
+#movieDetails button:focus {
+  background: #ff7f00;
+  transform: scale(1.05);
+  outline: none;
+}
+
+#movieDetails img {
+  margin-top: 10px;
+  width: 200px;
+  border-radius: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== CLASSES DE UTILIDADE ===== */
+.hidden {
+  display: none;
+}
+
+/* ===== Modal Login ===== */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  z-index: 9999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  color: #fff;
+  width: 100%;
+  max-width: 360px;
+}
+
+.modal-content input {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 15px;
+  width: 90%;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.modal-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#submitLogin {
+  background: #ff0057;
+  color: #fff;
+}
+
+#submitLogin:hover,
+#submitLogin:focus {
+  background: #ff7f00;
+  outline: none;
+}
+
+#closeLogin {
+  background: #444;
+  color: #fff;
+}
+
+#closeLogin:hover,
+#closeLogin:focus {
+  background: #666;
+  outline: none;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.125rem;
+  color: white;
+  background-color: #070202;
+  margin-top: 40px;
+}
+
+/* ===== Scrollbars personalizados ===== */
+#moviesList::-webkit-scrollbar,
+#movieDetails::-webkit-scrollbar {
+  width: 8px;
+}
+
+#moviesList::-webkit-scrollbar-thumb,
+#movieDetails::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* ===== Gráfico circular ===== */
+.circle-chart {
+  --thickness: 6px;
+  --percentage: 0;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #f39c12 calc(var(--percentage) * 1%), 
+    #444 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: var(--thickness);
+}
+
+.circle-chart span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #moviesList, #movieDetails {
+    max-height: none;
+    min-width: 100%;
+  }
+
+  #moviesList {
+    justify-content: center;
+  }
+
+  .movie-card {
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav button {
+    width: 100%;
+  }
+
+  header input[type="text"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  header button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .movie-card {
+    flex: 0 0 90%;
+  }
+}
