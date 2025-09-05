@@ -1,75 +1,16 @@
+Claro! Aqui estão 10 casos de teste para o site TMDb Clone que você enviou, seguindo o estilo da tabela que você mandou antes:
 
+| **ID** | **Funcionalidade**      | **Descrição do Teste**                                      | **Entrada Esperada**                 | **Resultado Esperado**                                                        | **Status** |
+| ------ | ----------------------- | ----------------------------------------------------------- | ------------------------------------ | ----------------------------------------------------------------------------- | ---------- |
+| TC01   | Navegação Home          | Clicar no botão "Início" no menu                            | Clique no botão "Início"             | Lista de filmes populares aparece na tela                                     | ✅          |
+| TC02   | Navegação Filmes        | Clicar no botão "Filmes" no menu                            | Clique no botão "Filmes"             | Lista de filmes populares aparece na tela                                     | ✅          |
+| TC03   | Navegação Séries        | Clicar no botão "Séries" no menu                            | Clique no botão "Séries"             | Lista de séries populares aparece na tela                                     | ✅          |
+| TC04   | Buscar Conteúdo         | Digitar um termo válido no campo de busca e clicar "Buscar" | Termo de busca válido (ex: "Matrix") | Lista combinada de filmes e séries correspondentes ao termo aparece           | ✅          |
+| TC05   | Exibir Detalhes         | Clicar em um card de filme ou série                         | Clique em um item da lista           | Exibe os detalhes do filme/série selecionado, incluindo trailer e plataformas | ✅          |
+| TC06   | Login Modal             | Clicar no botão "Login"                                     | Clique no botão "Login"              | Modal de login aparece                                                        | ✅          |
+| TC07   | Fechar Modal Login      | Clicar no botão "Fechar" no modal de login                  | Modal aberto, clique em "Fechar"     | Modal de login desaparece                                                     | ✅          |
+| TC08   | Login com Campos Vazios | Tentar enviar login com username ou senha vazios            | Campos vazios                        | Exibe alerta solicitando preenchimento dos campos                             | ✅          |
+| TC09   | Filtrar por Gênero      | Clicar em um botão de gênero na sidebar                     | Clique no gênero "Comédia"           | Lista de filmes/séries filtrada apenas com itens do gênero selecionado        | ✅          |
+| TC10   | Botão Contato           | Clicar no botão "Contato" no menu                           | Clique no botão "Contato"            | Redireciona para a página "contato.html"                                      | ✅          |
 
-TMBD CLONE
-
-ESCOPO DO PROJETO 
-
-Este projeto consiste no desenvolvimento de uma aplicação web que replica funcionalidades básicas do TMDb (The Movie Database), uma popular plataforma para busca e consulta de filmes e séries.
-O sistema permitirá que usuários possam:
-
-Buscar filmes e séries
-
-Visualizar listas de filmes populares
-
-Consultar detalhes de filmes e séries
-
-Fazer login para acessar funcionalidades personalizadas (em desenvolvimento)
-
-Entrar em contato por meio de formulário (seção Contato)
-
-
-JUSTIFICATIVA DO PROJETO (PESSOAL)
--nós gostamos muito de assistir séries e filmes, aproveitamos que tínhamos esse "interesse" em comum e quisemos criar um site baseado em alguns aplicativos que usamos para olhar, criando nosso prório site. (Referência da netflix)
-
-JUSTIFICATIVA DO PROJETO2 
-O consumo de conteúdo audiovisual cresce exponencialmente e a busca por plataformas que centralizam informações sobre filmes e séries é cada vez maior.
-Este clone do TMDb servirá como prática para consolidar conhecimentos em:
-
-Desenvolvimento Front-end com HTML, CSS e JavaScript
-
-Manipulação de APIs externas para obtenção de dados dinâmicos
-
-Gerenciamento de estado e navegação em interfaces web
-
-Design responsivo e experiência do usuário
-
-Além disso, o projeto permite aplicar técnicas modernas de desenvolvimento web em um contexto real, simulando funcionalidades de uma plataforma muito utilizada.
-
-TÉCNOLOGIAS ENVOLVIDAS
-
-Front-end: HTML5, CSS3, JavaScript (puro)
-
-API: Consumo da API pública do TMDb
-
-Controle de versão: Git + GitHub
-
-Layout responsivo e acessibilidade
-
-PROTÓTIPO INICIAL (WIFRAME)
-Protótipo inicial criado para planejar as telas principais do sistema:
-
-Página inicial com listagem de filmes e séries
-
-Tela de detalhes de filme/série
-
-Barra de busca para pesquisa dinâmica
-
-Modal de login
-
-Seção de contato com formulário
-
-📎 Link do Protótipo no Figma
-https://www.canva.com/design/DAGwuR5IBuY/2C_SVjMuomLY9hPIG3Rr9w/edit?utm_content=DAGwuR5IBuY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-
-ETAPA ATUAL
-Etapa 1 – Desenvolvimento Inicial
-
-Estrutura HTML e CSS criada
-
-Integração inicial com API para listagem de filmes
-
-Implementação da barra de busca e navegação básica
-
-Modal de login funcional
-
-Seção de contato planejada e em desenvolvimento
+Se quiser, posso ajudar a criar os scripts de teste detalhados ou um checklist para esses casos!
