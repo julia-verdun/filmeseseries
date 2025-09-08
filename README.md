@@ -7,7 +7,7 @@ ESCOPO DO PROJETO
 Este projeto consiste no desenvolvimento de uma aplicação web que replica funcionalidades básicas do TMDb (The Movie Database), uma popular plataforma para busca e consulta de filmes e séries.
 O sistema permitirá que usuários possam:
 
-Buscar filmes e séries
+
 
 Visualizar listas de filmes populares
 
