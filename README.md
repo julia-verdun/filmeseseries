@@ -9,7 +9,7 @@ O sistema permitirá que usuários possam:
 
 Buscar filmes e séries
 
-Visualizar listas de filmes populares
+
 
 Consultar detalhes de filmes e séries
 
