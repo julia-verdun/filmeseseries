@@ -73,3 +73,15 @@ Implementação da barra de busca e navegação básica
 Modal de login funcional
 
 Seção de contato planejada e em desenvolvimento
+
+
+API USADAS
+
+GET https://api.themoviedb.org/3/movie/popular
+filmes populares
+
+GET https://api.themoviedb.org/3/{type}/{id}/videos
+Trailers (YouTube
+
+GET https://api.themoviedb.org/3/discover/movie?with_genres={genreId}
+Filmes por gênero
